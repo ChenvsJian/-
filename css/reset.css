@@ -1,0 +1,19 @@
+/*
+* @Author: CJ
+* @Date:   2016-07-31 23:19:35
+* @Last Modified by:   CJ
+* @Last Modified time: 2016-08-10 00:13:46
+*/
+h1,h2,h3,h4,h5,a,p,span{
+	list-style: none;
+	font-family: "微软雅黑";
+	margin:0;
+	padding: 0;
+}
+input,a,button{
+	list-style: none;
+	text-decoration: none;
+	outline-style: none;
+	border:0 none;
+	font-family: "微软雅黑";
+}
