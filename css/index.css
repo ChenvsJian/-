@@ -1,0 +1,462 @@
+
+/* 头部开始 */
+#header .navbar .container .collapse .nav {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+#header .navbar .container .collapse .nav ul{
+    margin: 0 auto;
+}
+
+
+#header .navbar .container .collapse .nav > li{
+	display: inline-block;
+	float: none;
+	margin: 0 20px;
+}
+
+#header .navbar .container .collapse .nav > li > a{
+	font-weight: 700;
+	color: white;
+	opacity: 0.5;
+	position: relative;
+}
+
+#header .navbar .container .collapse .nav > li:not(#logo) > a:before{
+	content: "";
+	display: block;
+	width: 20px;
+	height: 4px; 
+	background-color: white;
+	position: absolute;
+	top: 45px;
+	left: 19px;
+	opacity: 0;
+	transition: all 0.4s linear;
+}
+
+#header .navbar .container .collapse .nav > li:not(#logo) > a:hover:before{
+	top: 37px;
+	left: 17px;
+	width: 25px;
+	opacity: 1;
+	transition: all 0.4s linear;
+}
+
+#header .navbar .container .collapse .nav > li:not(#logo) > a:hover{
+	opacity: 0.9;
+	transition: all 0.5s linear;
+}
+
+
+#header .navbar .container .collapse .nav #logo a{
+	padding: 0 10px;
+	margin: 0;
+	opacity: 1;
+}
+
+#header .navbar .container .collapse .nav #logo a h1{
+	font-size: 64px;
+}
+
+#header .navbar .container .collapse .nav #logo a h1 span{
+	position: relative;
+	top: 15px;
+}
+#header .navbar-default{
+	background-color: transparent;
+	border: transparent;
+}
+#header .navbar .container .visible-xs{
+	display: none;
+}
+
+#header .scrolled{
+	padding-top: 0 !important;
+	background-color: white;
+	transition: all 0.5s linear;
+}
+#header .navbar-fixed-top{
+    padding-top: 20px;
+	transition: all 0.5s linear;
+}
+#header .container .collapse{
+	line-height: 85px ;
+}
+
+@media (max-width: 767px) {
+    #header .navbar .container .collapse .nav {
+		text-align: inherit;
+	}
+	
+	#header .navbar .container .navbar-header{
+		background-color: white;
+	}
+	#header .navbar .container .collapse .nav li{
+		display: block;
+		margin: 0;
+	}
+	#header .navbar .container .collapse .nav #logo {
+		display: none;
+	}
+	#header .navbar .container .visible-xs{
+		display: inline-block;
+		margin: 0;
+		padding: 0 0 0 15px;
+	}
+	
+	#header .navbar-fixed-top{
+		padding-top: 0; 
+		transition: all 0.5s linear;
+	}
+	#main .container .project{
+		display: none;
+	}
+	#footer .contact .container .message .row .name-in , #footer .contact .container .message .row .phone-in , #footer .contact .container .message .row .text-in{
+		transform: translateX(0px) !important;
+		opacity: 1;
+		margin-bottom: 50px;
+	}
+	#footer .contact .container .message .row .text-in{
+		margin-bottom: 0;
+	}
+}
+/* 头部结束 */
+
+/* 广告开始 */
+/* #barner{
+
+} */
+
+#barner{
+	background: url("../images/header1.jpg") 50% 50%;
+	background-size: cover; 
+	height: 660px;
+	position: relative;
+	padding: 200px 0;
+	margin-bottom: 40px;
+}
+/* 图片背景色 */
+#barner:before{
+	display: block;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #F1678D;
+	opacity: 0.4;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#barner .container .magass h1{
+	font-size: 64px;
+	transform: translateX(-1000px);
+	opacity: 0;
+	color: white;
+}
+
+#barner .container .magass p{
+	font-size: 36px;
+	transform: translateY(1000px);
+	opacity: 0;
+	color: white;
+}
+
+#barner .container .magass .in{
+	transform: translateY(0px);
+	transform: translateX(0px);
+	opacity: 1;
+	transition: all 1s linear;
+}
+
+#barner .container{
+	margin-top: 40px;
+}
+
+/* 广告结束 */
+
+/* 主体开始 */
+
+/* 请柬部分开始 */
+#main .container .make{
+	margin-bottom: 60px;
+}
+#main .container .make .row{
+	height: 100%;	
+}
+#main .container .make .row .in{
+	transform: translateY(0px) !important;
+	opacity: 1!important;
+	transition: all 0.3s linear;
+}
+#main .container .make .row div:nth-child(2){
+	transition-delay: 0.2s;
+}
+#main .container .make .row div:nth-child(3){
+	transition-delay: 0.4s;
+}
+#main .container .make .row div:nth-child(4){
+	transition-delay: 0.6s;
+}
+#main .container .make .row .col-md-3{
+	height: 100%;
+	transform: translateY(50px);
+	opacity: 0;
+}
+#main .container .make .row .col-md-3:hover div:nth-child(1){
+	transform: translateY(0px);
+	transition: all 0.3s linear;
+}
+#main .container .make .row .col-md-3 .icon{
+	margin-bottom: 40px;
+	transform: translateY(10px);
+	transition: all 0.2s linear;
+}
+#main .container .make .row .col-md-3 > p{
+	margin-bottom: 40px;
+	font-size: 16px;
+	color: gray;
+}
+#main .container .make .row .col-md-3 > a{
+	display: inline-block;
+	color: white;
+	font-size: 16px;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	background-color: pink;
+	border-radius: 25px;
+}
+#main .container .make .row .col-md-3 > a:hover{
+	background-color: yellowgreen;
+	text-decoration: none;
+}
+/* 请柬部分结束 */
+
+/* 信息开始 */
+#main .container .message .icon{
+	margin-bottom: 20px;
+	opacity: 0;
+	transform: scale(0.5);
+}
+#main .container .message .in{
+	opacity: 1;
+	transform: scale(1);
+	transition: transform 0.6s cubic-bezier(0.17, 0.89, 0.67, 1.57),opacity 0.6s ease-out;	
+}
+#main .container .message .messages{
+/* 	font-size: 15px;
+ */}
+#main .container .message .messages>p{
+	font-size: 15px;
+	line-height: 30px;
+}
+#main .container .message .messages p>span{
+	font-weight: 700;
+}
+#main .container .message{
+	margin-bottom: 60px;
+}
+/* 信息结束 */
+/*news部分开始*/
+#main .container .news{
+	margin-bottom: 60px;
+}
+#main .container .news .row > div h3{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	transition: all 0.5s linear;
+}
+#main .container .news .row > div p{
+	font-size: 16px;
+	color: gray;
+}
+#main .container .news .row > div:hover h3{
+	color:pink;
+	transition: all 0.2s linear;
+}
+#main .container .news .row .icon{
+	transition: all 0.3s linear;
+}
+#main .container .news .row .icon:hover{
+	transform: translateY(-10px);
+	transition: all 0.3s linear;
+}
+#main .container .news .row>div{
+	transform: translateY(50px);
+	transition: all 0.3s linear;
+	opacity: 0;
+}
+#main .container .news .row .in{
+	transform: translateY(0px);
+	opacity: 1;
+	transition: all 0.3s linear;
+}
+#main .container .news .row div:nth-child(2){
+	transition-delay: 0.2s;
+}
+#main .container .news .row div:nth-child(3){
+	transition-delay: 0.4s;
+}
+#main .container .news .row div:nth-child(4){
+	transition-delay: 0.6s;
+}
+/*news部分结束*/
+/*制作开始*/
+#main .container .project {
+	padding-top:60px;
+	background-color: lightgray;
+	margin-bottom: 60px;
+}
+#main .container .project>h2{
+	font-size: 50px;
+	margin-bottom: 40px;
+	opacity: 0;
+	transform: scale(0);
+}
+#main .container .project .hIn{
+	transition: transform 0.6s cubic-bezier(0.17, 0.89, 0.67, 1.57),opacity 0.6s ease-out;
+	opacity: 1;
+	transform: scale(1);
+}
+#main .container .project>p{
+	font-size: 16px;
+}
+#main .container .project .phone{
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 60px;
+	transform: translateY(80px);
+	opacity: 0;
+}
+#main .container .project .phone .bottom{
+	position: relative;
+	transition: all 0.5s linear;
+}
+
+#main .container .project .phone .bottom>p{
+	position: absolute;
+	margin-top: -50px;
+	top: 50%;
+	left: 40%;
+	opacity: 0;
+	transition: all 0.3s linear;
+
+}
+#main .container .project .phone .bottom:hover p{
+	left: 45%;
+	opacity: 1;
+	transition: all 0.3s linear;
+}
+#main .container .project .phone .bottom>p>a{
+	display: block;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	border-radius: 25px;
+	background-color: hotpink;
+	color: white;
+}
+#main .container .project .phone .top>img{
+	width: 100%;
+}
+#main .container .project .phone .bottom>img{
+	width: 100%;
+	opacity: 1;
+	transition: all 0.5s linear;
+}
+#main .container .project .phone .bottom a:hover{
+	text-decoration: none;
+	color: white;
+	opacity: 1;
+}
+#main .container .project .phone .bottom:hover{
+	opacity: 0.5;
+	transition: all 0.5s linear;
+}
+#main .container .project .in{
+	transform: translateY(0px);
+	opacity: 1;
+	transition: all 0.5s linear;
+}
+/*制作结束*/
+/* 主体结束 */
+
+/*footer部分开始*/
+/*联系部分开始*/
+#footer .contact{
+	background-color: skyblue;
+	padding: 60px 0;
+}
+#footer .contact .container .top {
+	color: white;
+	margin-bottom: 60px;
+}
+#footer .contact .container .top>h2{
+	margin-bottom: 20px;
+	font-size: 48px;
+}
+#footer .contact .container .top>p{
+	font-size: 16px;
+}
+
+#footer .contact .container .message .row > div{
+	opacity: 0;
+}
+#footer .contact .container .message .row > div>input{
+	height: 45px;
+	width: 200px;
+	border-radius: 25px;
+	padding-left: 15px;
+	background-color: lightblue;
+	box-shadow: 0px 0px 15px gray;
+	font-size: 20px;
+	position: relative;
+}
+
+/*input动画*/
+#footer .contact .container .message .row .name-in{
+	transform: translateX(180px);
+	opacity: 1;
+	transition: all 0.5s linear;
+}
+#footer .contact .container .message .row .phone-in{
+	opacity: 1;
+	transition: all 0.5s linear;
+}
+#footer .contact .container .message .row .text-in{
+	transform: translateX(-180px);
+	opacity: 1;
+	transition: all 0.5s linear;
+}
+#footer .contact .container .message .row div > span {
+	font-size: 20px;
+	font-weight: 700;
+	color: gray;
+	position: absolute;
+	top: 8px;
+	left: 112px;
+	transition: all 0.2s linear;
+}
+#footer .contact .container .submit{
+	margin-top: 40px;
+}
+#footer .contact .container .submit button{
+	width: 100px;
+	height: 50px;
+	background-color: pink;
+	font-weight: 700;
+	border-radius: 25px;
+	transition: all 0.2s linear;
+
+}
+#footer .contact .container .submit button:hover{
+	background-color: lightpink;
+	transition: all 0.2s linear;
+}
+/*联系部分结束*/
+/*footer部分结束*/
